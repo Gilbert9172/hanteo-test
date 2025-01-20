@@ -2,7 +2,6 @@ package com.hanteo.category.model.category;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
-
 import java.util.ArrayList;
 import java.util.List;
 

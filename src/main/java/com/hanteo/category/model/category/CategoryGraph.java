@@ -1,7 +1,6 @@
 package com.hanteo.category.model.category;
 
 import com.hanteo.category.model.categoryRelation.CategoryRelations;
-
 import java.util.List;
 import java.util.Map;
 
