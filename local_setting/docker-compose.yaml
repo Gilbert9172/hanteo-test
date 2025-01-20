@@ -1,0 +1,22 @@
+services:
+  mysql:
+    build: ./mysql/
+    image: gilbert9172/hanteo:latest
+    container_name: hanteo_coding_test
+    volumes:
+      - hanteo_mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: hanteo
+    ports:
+      - '9172:3306'
+    restart: always
+    platform: linux/amd64
+    networks:
+      - gilbert-local-network
+
+networks:
+  gilbert-local-network:
+
+volumes:
+  hanteo_mysql_data:
